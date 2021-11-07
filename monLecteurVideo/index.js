@@ -163,6 +163,7 @@ let template = /*html*/`
   <div class="button-item"><button id="info">GET INFO</button></div>
   <div class="button-item"><button id="avance10">+10s</button></div>
   <div class="button-item"><button id="recule10">-10s</button></div>
+  <div class="button-item"><button id="retourZero">Retour au début</button></div>
 </div>
 <div class="a">
 <div class="b">
@@ -298,6 +299,9 @@ class MyVideoPlayer extends HTMLElement {
         this.shadowRoot.querySelector("#recule10").onclick = (event) => {
             this.recule10s();
         }
+        this.shadowRoot.querySelector("#retourZero").onclick = (event) => {
+            this.retourZero();
+        }
         this.shadowRoot.querySelector("#speedSlider").oninput = (event) => {
             this.changeSpeed(event);
         }
@@ -353,7 +357,9 @@ class MyVideoPlayer extends HTMLElement {
     paused(){
         return this.player.paused;
     }
-    
+    retourZero(){
+        this.player.currentTime = 0;
+    }
     pause() {
         this.player.pause();
     }
