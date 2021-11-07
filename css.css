@@ -1,8 +1,8 @@
 
-div audio {
+/* div audio {
     display: block;
     margin-bottom:10px;
-  }
+  } */
   
   #myCanvas {
     margin-bottom:10px;
@@ -40,6 +40,7 @@ div audio {
     font-size: 12px;
   }
 .container{
-  display: flex;
-  justify-content: center;
+  display: ruby;
+  flex-flow: wrap;
+  flex-direction: column;
 }
