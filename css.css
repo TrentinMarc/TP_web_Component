@@ -1,5 +1,4 @@
 
-
 div audio {
     display: block;
     margin-bottom:10px;
@@ -40,3 +39,7 @@ div audio {
      font-family: "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
     font-size: 12px;
   }
+.container{
+  display: flex;
+  justify-content: center;
+}

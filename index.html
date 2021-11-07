@@ -5,22 +5,19 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./monLecteurVideo/index.js" type="module"></script>
 </head>
 
 <!-- src="https://filesamples.com/samples/video/mp4/sample_1280x720_surfing_with_audio.mp4"> -->
-<body>
-    <my-player id="player"
-                src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"
-    ></my-player>
-    <span class="iconify" data-icon="akar-icons:play"></span>
-    <button onclick="play()">PLAY DEPUIS INDEX.HTML</button>
-    <script>
-       const p = document.querySelector("#player");
-       function play() {
-           p.play();
-       }
-    </script>
+<body class="container">
+    <div>
+        <!-- src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" -->
+        <!-- src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" -->
+        <my-player id="player"
+        src="monLecteurVideo/assets/sample-mp4-file.mp4"
+        ></my-player>
+    </div>
     <!--
     <video id="player" controls
     src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
